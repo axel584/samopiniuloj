@@ -1,0 +1,11 @@
+* { margin:0; padding:0; }
+body
+{
+	background: #FC3;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #300;
+}
+img { border:none; margin: 5px;}
+u {text-decoration: underline;}
+p.eraro {color:red;}
+h2 {text-align:center;}

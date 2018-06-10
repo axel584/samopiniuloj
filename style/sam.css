@@ -1,0 +1,854 @@
+* { margin:0; padding:0; }
+body
+{
+	background: #FC3 url(feuilles.jpg);
+	font:13px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #300;
+}
+div {
+	scrollbar-face-color:#FF6;
+ 	scrollbar-darkshadow-color: #FC3;
+	scrollbar-arrow-color: #F60;
+	scrollbar-base-color: #FC3;
+	scrollbar-track-color:#FF9;
+}
+img {
+	border:none;
+}
+p {
+	padding: 5px 5px 5px 15px;
+}
+input,
+textarea,
+select {
+	border-top: 1px solid #FC3;
+	border-right: 1px solid #C30;
+	border-bottom: 1px solid #C30;
+	border-left: 1px solid #FC3;
+	background: #FFC;
+	font:13px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin:2px;
+	padding-left:3px;
+}
+input.jam {
+	background: #FF6;
+}
+input.pasinta {
+	border: 1px solid #FF6;
+}	
+input.bouton {
+	background: #FC6;
+	color: #F60;
+	font-weight:bold;
+}
+input.sendu {
+	background: none;
+	border:none;
+}
+div#rimarko {
+	margin-top:10px;
+	background:#FF6;
+	border:1px solid #C30;
+	padding:3px;
+	z-index:1000;
+	width:250px;
+}
+fieldset {
+	padding: 0.5em;
+	border: none;
+}
+label {
+	display: inline;
+	float: left;
+	width: 90px;
+}
+div#rimarko p,
+.rimarko {
+	font-size:12px;
+	padding:5px;
+	color:#C30;
+}
+p.ligo {
+	text-align:right;
+	font-weight:bold;
+	color:#C30;
+}
+p.ligo a {
+	text-decoration: none;
+	color: #C30;
+}
+.dika {
+	font-weight: bold;
+}
+.griza {
+	color: #966;
+}
+.helbruna {
+	color: #F96;
+}
+.dekstre {
+	text-align:right;
+}
+/*******************************
+ * pagx-titolo
+ *******************************
+*/
+#titolo {
+	position:absolute;
+	left:210px; top:0px;
+	height:120px;
+	width:500px;
+	background: url(titolo.gif) no-repeat;
+}
+#titolo h1 {
+	display:none;
+}
+
+/****************************************
+ * menuo : ludi, rezultoj, statistikoj...
+ ****************************************
+*/
+#eniro {
+	top:20px; left:0px;
+	padding-left:10px;
+	width:160px;
+}
+#menuo {
+	position:absolute;
+	top:155px; left:0px;
+	padding-left:10px;
+	width:160px;
+}
+#menuo p,
+#eniro p {
+	margin:0; padding:0;
+	font-size:11px;
+	width:150px; height: 65px; 
+	color: #C30;
+}
+#menuo a {
+	width:150px; height:65px;
+	display:block;
+}
+#menuo a.aligxilo {
+	background: url(aligxilo1.gif) 0 0 no-repeat;
+}
+#menuo a.aligxilo:hover {
+	background: url(aligxilo1.gif) 0 -65px no-repeat;
+}
+#menuo a.akceptejo {
+	background: url(akceptejo1.gif) 0 0 no-repeat;
+}
+#menuo a.akceptejo:hover {
+	background: url(akceptejo1.gif) 0 -65px no-repeat;
+}
+#menuo a.ludi {
+	background: url(ludi1.gif) 0 0 no-repeat;
+}
+#menuo a.ludi:hover {
+	background: url(ludi1.gif) 0 -65px no-repeat;
+}
+#menuo a.rezulto {
+	background: url(rezulto1.gif) 0 0 no-repeat;
+}
+#menuo a.rezulto:hover {
+	background: url(rezulto1.gif) 0 -65px no-repeat;
+}
+#menuo a.foriri {
+	background: url(foriri1.gif) 0 0 no-repeat;
+}
+#menuo a.foriri:hover {
+	background: url(foriri1.gif) 0 -65px no-repeat;
+}
+#menuo a.admin {
+	background: url(admin1.gif) 0 0 no-repeat;
+}
+#menuo a.admin:hover {
+	background: url(admin1.gif) 0 -65px no-repeat;
+}
+#menuo a.proponi {
+	background: url(proponi1.gif) 0 0 no-repeat;
+}
+#menuo a.proponi:hover {
+	background: url(proponi1.gif) 0 -65px no-repeat;
+}
+
+#menuo a.elektita {
+	border:2px solid #FF6;
+}
+#menuo a span {
+	display:none;
+}
+#mesagxo {
+	margin:0;
+	font-size:11px;
+	color: #C30;
+}
+#mesagxo input {
+	background: none;
+	border:none;
+}
+#horo {
+	margin:40px 0 0 0;
+	font-size:11px;
+	color: #C30;
+}
+#horo p {
+	height:30px;
+}
+#horo .kadro {
+	border: 1px solid #C30;
+	background:url(enhavo.gif);
+}
+/*******************************
+ * enhavo
+ *******************************
+*/
+
+#enhavo {
+	position:absolute;
+	top:121px;
+	left:170px;
+}
+#bonvenon {
+	width:500px;
+	height:35px;
+}
+
+div#bonvenon p {
+	font-size:20px;
+	color:#C30;
+	padding:5px 5px 5px 10px;
+}
+div#enhavo h1 {
+	font-size: 16px;
+	padding-bottom:10px;
+	color:#C30;
+}
+div#enhavo ul li {
+	list-style: none;
+	margin-left:20px;
+}
+div#enhavo td.titolo{
+	text-align: right;
+	font-size:13px;
+}
+/* ongleto                */
+
+div#ongleto {
+	height:35px;
+	width:500px;
+   list-style-type: none;
+ 	list-style-image: none;
+ 	font-size:11px;
+}
+#ongleto li {
+	height:20px;
+   float: left;
+   padding:0;
+   margin: 15px 0 0 0;
+   border: none;
+   background:#FED950;
+}
+#ongleto a {
+   float: left;
+   display: block;
+   text-decoration: none;
+ 	color:#C30;
+   padding: 4px;
+}
+#ongleto a:hover {
+	background: #FF6;
+}
+#ongleto .elektita {
+	background: #FF6;
+	color: #F60;
+}
+/*******************************
+ * regulo
+ *******************************
+*/
+#regulo {
+	width:520px;
+	height:350px;
+	background:url(enhavo.gif);
+	padding:10px;
+}
+
+#regulo h2 {
+	font-size:14px;
+	color:#C30;
+	margin-bottom:10px;
+}
+#regulo p {
+	padding:5px;
+	font-size:13px;
+}
+#regulo ul {
+	list-style: none;
+	margin:0px;
+	width:150px;
+}
+#regulo li {
+	list-style:none;
+	background:#FF6;
+	margin:2px;
+	padding:2px;
+	font-size:11px;
+}
+#regulo p.rimarko {
+	font-size:11px;
+	padding:3px;
+	color:#C30;
+}
+/*******************************
+ * forgesemulo
+ *******************************
+*/
+
+#forgesemulo {
+	width:520px;
+	height:350px;
+	background:url(enhavo.gif);
+	padding:10px;
+}
+
+#forgesemulo h2 {
+	font-size:14px;
+	color:#C30;
+	margin-bottom:10px;
+}
+#forgesemulo p {
+	padding:5px;
+	font-size:13px;
+}
+#forgesemulo ul {
+	list-style: none;
+	margin:0px;
+	width:150px;
+}
+#forgesemulo li {
+	list-style:none;
+	background:#FF6;
+	margin:2px;
+	padding:2px;
+	font-size:11px;
+}
+#forgesemulo p.rimarko {
+	font-size:11px;
+	padding:3px;
+	color:#C30;
+}
+
+/*******************************
+ * luda parto
+ *******************************
+*/
+
+#ludo,
+#rezulto,
+#alighilo {
+	width:800px;
+	height:360px;
+	background:url(enhavo.gif);
+	padding:10px;
+}
+#adminejo {
+	width:800px;
+	height:350px;
+	background:url(enhavo.gif);
+	padding:10px;
+}
+div#ludo div.parto,
+div#rezulto div.parto {
+	float:left;
+	padding:10px;
+	height:260px;
+	width:260px;
+}
+div#adminejo div.parto {
+	float:left;
+	padding:10px;
+	height:260px;
+	width:auto;
+}
+div#adminejo div.parto2 {
+	float:right;
+	padding:10px;
+	height:260px;
+	width:auto;
+}
+div#alighilo div.parto {
+	float:left;
+	padding:10px;
+	height:280px;
+	width:380px;
+}
+
+#ludo p,
+#rezulto p,
+#adminejo p,
+#alighilo p {
+	padding:5px;
+}
+div#ludo h2,
+div#rezulto h2,
+div#adminejo h2,
+div#alighilo h2 {
+	font-size:13px;
+	color:#C30;
+	margin-bottom:10px;
+}
+span.dato {
+	height:18px;
+	font-size:16px;
+	font-weight:bold;
+	color:#C30;
+	margin:0; padding:0px;
+}
+
+div#vorto {
+	width:150px; height:150px;
+	margin-left:20px;
+	padding:5px;
+	background: url(kadro.gif) no-repeat;
+	display: none;
+}
+div#vorto img {
+	width:140px;
+	height:140px;
+}
+p.vorto {
+	font-size:22px;
+}
+#ludo table,
+#rezulto table,
+#adminejo table,
+#stat table {
+	font-size:13px;
+	border:none;
+}
+#ludo td,
+#rezulto td,
+#adminejo td,
+#stat td {
+	padding:2px;
+}
+#ludo td.num {
+	background: url(numero.gif) no-repeat;
+	font-weight:bold;
+	padding:2px;
+	width:23px;
+	padding-left:3px;
+}
+.parto ul {
+	list-style: none;
+	margin:0px;
+}
+div#ludo li,
+div#rezulto li,
+div#adminejo li {
+	list-style:none;
+	background:#FF6;
+	margin:1px;
+	padding:1px;padding-left:2px;
+	font-size:11px;
+}
+div#ludo li a,
+div#rezulto li a,
+div#rezulto td a,
+div#adminejo li a,
+div#adminejo td a {
+	text-decoration:none;
+	color:#300;
+	display:block;
+}
+div#ludo li a:hover,
+div#rezulto li a:hover,
+div#rezulto td a:hover,
+div#adminejo li a:hover,
+div#adminejo td a:hover {
+	text-decoration:none;
+	background:#FF6;
+	color:#C30;
+}
+div#rezulto table,
+div#adminejo table {
+	width:100%;
+}
+div#rezulto td,
+div#adminejo td,
+div#stat td {
+	background:#FF6;
+	padding:1px;padding-left:2px;
+	font-size:11px;
+}
+div#rezulto td.rimarko,
+div#adminejo td.rimarko {
+	color:#C30;
+}
+/*******************************
+ * aligxilo
+ *******************************
+*/
+div#alighilo select#lando {
+	width: 240px;
+}
+
+/*******************************
+ * rezultoj
+ *******************************
+*/
+div.dato {
+	width:280px;
+	height:18px;
+	font-size:16px;
+	font-weight:bold;
+	color:#C30;
+	margin:0; padding:5px;
+}
+span.retroen a {
+	text-decoration:none;
+}
+div#ludintoj {
+	width:480px;
+	height:300px;
+	overflow:auto;
+ 	}
+div#ludintoj ul {
+	width:172px;
+}
+div#protokolo {
+	width:700px;
+	height:250px;
+	overflow:auto;
+}
+.kadro {
+	border:1px solid #F60;
+	padding:5px;
+	background: #FF6;
+} 
+.kadro table {
+	font-size:13px;
+	border:none;
+}
+.kadro td {
+	padding:2px;
+}
+.kadro td.kol1 {
+	width:80%;
+}
+.kadro td.kol2 {
+	text-align:right;
+}
+.kadro tfoot {
+	font-weight:bold;
+}
+.kadro tfoot td {
+	border-top:1px solid #F60;
+}
+div#stat {
+	width:780px;
+	height:280px;
+	overflow:auto;
+}
+div#stat ul {
+	width:150px;
+}
+
+/*******************************
+ * piedo
+ *******************************
+*/
+div#piedo {
+	margin-top:0px;
+	margin-left:10px;
+	font-size:10px;
+	color: #F60;
+	clear:both;
+}
+div#piedo a {
+	text-decoration:none;
+	color: #F60;
+}
+div#piedo a:hover {
+	text-decoration:underline;
+}
+/*******************************
+ * eraro-mesagxo
+ *******************************
+*/
+
+div.eraro {
+	background: url(eraro.gif) 100% -5px no-repeat;
+	text-align:right;
+	color:#F30;
+	font-weight:bold;
+	font-size:16px;
+	position:absolute;
+	top:136px; left:450px;
+	width:260px; height:40px;
+	padding: 2px 15px 2px 2px;
+	border:none;
+	z-index:1;
+}
+
+/**************************
+ * admin
+ **************************
+*/
+#admin {
+	position:absolute;
+	top:130px; left:20px;
+	padding:10px;
+	background:url(enhavo.gif);
+}
+#listo {
+	padding:10px;
+	background:url(enhavo.gif);
+}
+div#ludantoj {
+	width:450px;
+	height:290px;
+	overflow:auto;
+}
+div.bildeto {
+	float:left;
+	width:90px;
+	padding:3px;
+	background: url(kadreto.gif) no-repeat;
+}
+div.bildeto p {
+	font-size:10px;
+	margin:3px 0; padding:0;
+}
+table.jaro {
+	font-size:12px;
+	color:#F60;
+	text-align:right;
+}
+table.jaro td {
+	border-collapse: separate;
+	width:55px;
+	line-height:15px;
+	border: 1px solid #F60;
+	text-align:center;
+	background:#FFC;
+}
+table.jaro a {
+	display: block;
+	text-decoration: none;
+	color:#F60;
+}
+table.jaro a:hover{
+	color:#300;
+	background:#FC3;
+}
+table.jaro a.nuna {
+	background:#FC3;
+}
+
+/**************************
+ * admin / calendrier
+ **************************
+*/
+
+table.monato {
+	font-size:14px;
+	color:#F60;
+	border-collapse:collapse;
+	text-align:right;
+	background:url(enhavo.gif);
+}
+
+table.monato td {
+	border-collapse: collapse;
+	border: 1px solid #F60;
+	padding:4px;
+	text-align:center;
+}
+
+table.monato td a {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	color:#C30;
+}
+table.monato td a:hover{
+	color:#300;
+	background:#FC3;
+}
+
+table.jaro td a:hover {
+	color:#300;
+	background:#FC3;
+}
+div.bildoj {
+	float:right;
+}
+
+
+@media screen and (max-width: 1024px) {
+/* Styles */
+	body
+	{
+		text-align: center;
+	}
+	#kapo {
+		text-align:center;
+	}
+	#titolo {
+	    position: relative;
+	}
+	#enhavo {
+		position:relative;
+		width:90%;
+		top:auto;
+		left:auto;
+		margin:0 auto;
+	}
+	#bonvenon {
+		width:auto;
+		height:auto;
+	}
+
+	div#bonvenon p {
+		font-size:14px;
+	}
+
+	#eniro {
+		position:absolute;
+		top:5px; left:0px;
+		padding-left:10px;
+		display:block;
+		width:100%;
+	}
+	#menuo {
+		position:absolute;
+		top:5px; left:0px;
+		padding-left:10px;
+		width:100%;
+		display:flex;
+		align-content: space-between;
+		align-items:flex-start;
+		flex-direction: row;
+	}
+	#menuo p,
+	#eniro p {
+		margin:0; padding:0;
+		font-size:14px;
+		width:auto; height: auto; 
+		margin-left:1%; margin-right:1%;
+		align-self:center;
+	}
+	#menuo a {
+		width:100%;height:auto;
+		display:;;
+		font-size:14px;
+		color: #C30;
+		text-transform:uppercase;
+		text-decoration: none;
+	}
+	#menuo a.aligxilo {
+		background-image: none;
+	}
+	#menuo a.aligxilo:hover {
+		background-image: none;
+	}
+	#menuo a.akceptejo {
+		background-image: none;
+	}
+	#menuo a.akceptejo:hover {
+		background-image: none;
+	}
+	#menuo a.ludi {
+		background-image: none;
+	}
+	#menuo a.ludi:hover {
+		background-image: none;
+	}
+	#menuo a.rezulto {
+		background-image: none;
+	}
+	#menuo a.rezulto:hover {
+		background-image: none;
+	}
+	#menuo a.foriri {
+		background-image: none;
+	}
+	#menuo a.foriri:hover {
+		background-image: none;
+	}
+	#menuo a.admin {
+		background-image: none;
+	}
+	#menuo a.admin:hover {
+		background-image: none;
+	}
+	#menuo a.proponi {
+		background-image: none;
+	}
+	#menuo a.proponi:hover {
+		background-image: none;
+	}
+	
+	#menuo a.elektita {
+		border:2px solid #FF6;
+	}
+	#menuo a span {
+		display:block;
+	}
+	#ludo,
+	#rezulto,
+	#alighilo {
+		width:auto;
+		height:auto;
+		padding:1%;
+	}
+	div#ludo div.parto,
+	div#rezulto div.parto {
+		float:none;
+		padding:2%;
+		height:auto;
+		width:auto;
+	}
+	#bonvenon {
+		width:auto;
+		height:auto;
+	}
+	div#vorto {
+		display: none;
+	}
+	div#vorto img {
+		width:140px;
+		height:140px;
+	}
+	p.vorto {
+		font-size:22px;
+	}
+	#mesagxo {
+		display: none;
+	}
+	#horo {
+		display: none;
+	}
+	#ludo td.num {
+		background-image: none;
+		font-weight:bold;
+		padding:2px;
+		width:23px;
+		padding-left:3px;
+	}
+	#ludo table, #rezulto table, #adminejo table, #stat table {
+	    font-size: 16px;
+	    border: none;
+	}
+	input {
+		border-top: none;
+		border-right: none;
+		border-bottom: none;
+		border-left: 1px solid #FC3;
+		font:2rem;
+	}
+
+}

@@ -1,0 +1,26 @@
+On demande juste que edukado.net nous fournisse l'adresse email du joueur (pour lui envoyer les résultats). Ainsi qu'une URL "source" (tu comprendras après), pour edukado.net ce sera http://edukado.net
+
+quand quelqu'un se connecte, on regarde si son adresse email est en base, si c'est le cas, on affiche son identifiant, sinon, on lui demande son prénom et on enregistre son prénom comme identifiant et on met "null" comme mot de passe (enfin on ne le renseigne pas dans la base) et on indique également dans un autre champ l'URL source qui nous a été renseigné.
+résultat : il ne pourra pas se connecter directement sur notre site (car il n'a pas de mot de passe)
+
+quand on envoie les résultats, on envoie le lien vers notre site pour tout ceux qui n'ont pas d'URL "source" et pour les autres, on mets comme lien pour rejouer cet URL source.
+
+Ensuite, sur edukado.net, ils pourront toujours peaufiner pour mettre comme URL "source" la page exacte du jeu ou bien de laisser les joueurs arriver sur la page principale.
+
+
+ALGO :
+retadreso :
+On en a 0 en base : on demande un prénom qu'on utilisera comme identifiant et on indique "fonto" en base
+On en a 1 en base : on affiche son identifiant et on indique "fonto en base"
+On en a plus d'un : on trouve celui qui est le plus souvent utilisé. (ou on en prends un au hasard et on s'en bat les couilles) (après tout, qu'est ce qu'on en a à foutre qu'il joue avec tel ou tel identifiant puisque ce con joue via edukado.net ???)
+
+une fois qu'il a joué, on envoie en vérifiant la valeur de fonto comme lien pour rejouer
+
+
+
+/////////////////
+
+Il faudrait faire un formulaire pour récupérer son mot de passe
+Il faut vérifier à l'alighilo si l'adresse email est déjà utilisée.
+Il faut vérifier les tricheurs "ou les tres bons joueurs super copain"
+il faut mettre "fonto" dans les résultats

@@ -1,0 +1,262 @@
+* { margin:0; padding:0; }
+body
+{
+	background: #FC3 url(feuilles.jpg);
+	font-size:1rem;
+	font-family: Roboto, Arial, Helvetica, "Helvetica Neue", sans-serif;
+	color: #300;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	align-items: center;
+	padding:0 2%;
+}
+img {border:none;}
+
+input, input:focus, input:hover {background-color:transparent; border:none;border-bottom:1px solid #C30;}
+input.sendu {border:0; margin-left:3rem;margin-top:0.5rem;margin-bottom:0.5rem;}
+
+h2 {
+	font-size:1.3rem;
+	color:#C30;
+	font-weight: normal;
+}
+p.ligo a {
+	text-decoration: none;
+	color: #C30;
+}
+
+/*------------------------------------------------------*/
+/*                       titolo 	                    */
+/*------------------------------------------------------*/
+
+#titolo {
+	height:60px;
+	width:174px;
+	background: url(titolo2.gif) no-repeat;
+	margin-bottom:20px;
+}
+#titolo h1 {display:none;}
+
+/*------------------------------------------------------*/
+/*                       menuo   	                    */
+/*------------------------------------------------------*/
+
+#menuo {
+	display:flex;
+	align-content: space-around;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+
+#mesagxo {display:none;}
+#menuo p {
+	font-size:1rem;
+	display:inline-flex;
+	margin:0 0.3rem;
+}
+#menuo a {
+	width:100%;height:auto;
+	color: #C30;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+#menuo a {
+	width:100%;height:auto;
+	color: #C30;
+	text-transform:uppercase;
+	text-decoration: none;
+	padding-bottom:0.2em;
+}
+#menuo a.elektita {
+	border-bottom:3px solid #C30;
+}
+#menuo a.proponi {display:none;}
+#menuo a.admin {display:none;}
+#horo {display:none;align-self:flex-end;margin-left:20%;font-size:14px;color:#C30;}
+#horo b {font-weight:normal;}
+
+/*------------------------------------------------------*/
+/*                       eniro   	                    */
+/*------------------------------------------------------*/
+
+#eniro {
+	display:flex;
+	align-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom:1rem;
+}
+#eniro input {margin-right:1rem;}
+#eniro p {
+	font-size:1 rem;
+	color:#C30;
+	margin:0 0.5rem;
+}
+#eniro input {font-size:1rem;color:#000;margin:0 0.5rem;}
+
+/*------------------------------------------------------*/
+/*                       enhavo   	                    */
+/*------------------------------------------------------*/
+#enhavo {
+	display:flex;
+	flex-direction:column;
+	margin-top:0.5rem;
+}
+
+div#bonvenon p {
+	font-size:1rem;
+	color:#C30;
+	padding:0.5rem 0.5rem 0.5rem 1rem;
+}
+ 
+div#enhavo h1 {
+	font-size: 16px;
+	padding-bottom:10px;
+	color:#C30;
+}
+
+#ludo,
+#rezulto,
+#alighilo,
+#regulo {
+	background:url(enhavo.gif);
+	padding:1rem;
+}
+#ludo {
+	display:flex;
+	flex-direction:column;
+}
+.parto {	
+	display:flex;
+	flex-direction:column;
+	margin-top:0.5rem;
+}
+.parto p {font-size:1rem;}
+
+div.dato {
+	color:#C30;
+	font-size:1.2rem;
+	margin:0; padding:0.5rem;
+}
+
+div#vorto {display:none;}
+p.vorto {font-size:1.2rem;margin-bottom:1rem;}
+
+/*------------------------------------------------------*/
+div#rimarko {
+	background:#FF6;
+	color:#C30;
+	font-size:1rem;
+	padding:0.5rem;
+	display: none;
+}
+
+/*------------------------------------------------------*/
+p.klarigo {
+	margin-bottom:1rem;
+}	
+/*------------------------------------------------------*/
+
+#ludo table {width:100%;font-size:1.2rem;margin-top:1rem;}
+#ludo tr {height:2rem;}
+#ludo table .num {color: #C30;}
+#ludo table input {font-size: 1.2rem;}
+
+/*------------------------------------------------------*/
+/*                       rezulto   	                    */
+/*------------------------------------------------------*/
+
+#rezulto {
+	display:flex;
+	flex-direction:column;
+	margin-top:0.5rem;
+}
+#stat {
+	display:flex;
+	flex-direction:column;
+}
+
+#rezulto table {font-size:1rem;margin-top:1rem;}
+#rezulto td {
+	padding:0.1rem;
+}
+
+#ludintoj a {
+	color: #C30;
+}
+/*------------------------------------------------------*/
+/*                       ongleto   	                    */
+/*------------------------------------------------------*/
+
+div#ongleto {
+	width:100%;
+	font-size:1rem;
+}
+div#ongleto ul {
+	list-style-type: none;
+	list-style-image: none;	
+}
+#ongleto li {
+	height:20px;
+	float: left;
+	padding:0.2rem;
+	border: none;
+	background:#FED950;
+}
+#ongleto a {
+	display: block;
+	text-decoration: none;
+	color:#C30;
+	padding: 4px;
+}
+#ongleto a:hover {
+	border-bottom:1px solid #C30;
+}
+#ongleto a.elektita {
+	border-bottom:1px solid #C30;
+}
+
+/*------------------------------------------------------*/
+/*                       regulo   	                    */
+/*------------------------------------------------------*/
+#regulo {
+	background:url(enhavo.gif);
+	padding:10px;
+}
+#regulo h2 {
+	color:#C30;
+	margin-bottom:10px;
+	font-weight: normal;
+}
+#regulo p {
+	padding:5px;
+}
+#regulo ul {
+	list-style: none;
+	margin:0px;
+	width:150px;
+}
+#regulo li {
+	list-style:none;
+	background:#FF6;
+	margin:2px;
+	padding:2px;
+}
+#regulo p.rimarko {
+	color:#C30;
+}
+
+
+/*------------------------------------------------------*/
+/*                       piedo   	                    */
+/*------------------------------------------------------*/
+
+#piedo {margin-top:0.5rem; font-size:0.9rem;}
+div#piedo a {
+	text-decoration:none;
+	color: #F60;
+}
+div#piedo a:hover {
+	text-decoration:underline;
+}
